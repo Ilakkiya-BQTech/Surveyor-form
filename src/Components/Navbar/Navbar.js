@@ -145,7 +145,7 @@ import Header from '../Header/Header';
 import ConfirmationPopup from './SignOut';
 
 const Navbar = () => {
-  const [selectedPage, setSelectedPage] = useState('dashboard');
+  const [selectedPage, setSelectedPage] = useState('');
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showProfileMenu, setShowProfileMenu] = useState(false);

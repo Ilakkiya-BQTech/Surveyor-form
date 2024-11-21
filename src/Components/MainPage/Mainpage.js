@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Mainpage = () => {
     const navigate = useNavigate();
     return (
-        <div className="main-container" onClick={() => navigate('/createform')}>
+        <div className="main-container" onClick={() => navigate('/dashboard')}>
             <div className="image-container">
 
                 
