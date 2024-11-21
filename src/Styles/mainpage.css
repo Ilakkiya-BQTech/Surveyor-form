@@ -1,0 +1,64 @@
+/* Center the main content container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    padding: 20px; 
+   
+  }
+  
+  /* Flex container for rows of images */
+  .image-container {
+    display: flex;
+    flex-direction: column; /* Stack image rows vertically */
+    gap: 40px;
+    cursor: pointer;
+     /* Space between image rows */
+  }
+  
+  /* Each image row */
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /* Space between image pairs */
+  }
+  
+  /* Style for each content wrapper */
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack image and label vertically */
+    align-items: center;
+  }
+  
+  /* Style for each image item */
+  .image-item {
+    width: 100px;
+    box-shadow:1px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Stack image and label vertically */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensure images fit within their containers */
+  .image-item img {
+    width: 55px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Style for the label below each image */
+  .label-item {
+    font-size: 16px;
+    color: #111827 !important;
+    text-transform: capitalize;
+    margin-top: 10px; /* Space between image and label */
+    text-align: center; /* Center the label */
+  }
+  

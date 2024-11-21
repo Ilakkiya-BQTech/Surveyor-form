@@ -1,0 +1,150 @@
+/* form.css */
+
+/* General Styles */
+.form-preview {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: #f0ebf8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+ .form-preview h3 {
+    text-align: center;
+    color: #7f85d5;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .preview-question {
+    margin-bottom: 20px;
+  }
+  
+  .required-star {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  textarea,
+  select,
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Section and General Question Display */
+  .no-section-questions,
+  .section-questions {
+    margin: 30px 0;
+  }
+  
+  .no-section-questions h4,
+  .section-questions h4 {
+    color: #7f85d5;
+  }
+  
+  input[type="file"] {
+    padding: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="file"]:hover {
+    background-color: #e8e8e8;
+  }
+  
+  /* Navigation preview-buttonss */
+  .navigation-preview-buttonss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .preview-buttons {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    background-color:#fff;
+    color: #7f85d5;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px solid #ccc;
+  }
+  
+  .preview-buttons:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .form-preview {
+      padding: 15px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  
+    .preview-buttons {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  .edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 1.2rem;
+  }
+  
+  .edit-button:hover {
+    color: #0056b3;
+  }
+  .navigation-buttons .preview-buttons{
+margin-left:10px;
+  }
+  .navigation-buttons{
+    margin: 10px 0 20px 0;
+  }

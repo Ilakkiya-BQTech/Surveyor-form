@@ -1,0 +1,99 @@
+
+.header {
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; 
+    color: #fff; 
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+
+  
+.form-structure {
+  flex: 1; /* Makes the left section take up equal space */
+  display: flex; /* Ensures the button stays aligned */
+  align-items: center;
+}
+
+.create-form-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+    color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.create-form-button:hover {
+  background-color: #45a049;
+}
+
+.search-container {
+  flex: 2; /* Ensures the middle section takes more space */
+  display: flex;
+  justify-content: center; /* Centers the search bar */
+  align-items: center; /* Aligns search bar vertically */
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.sort-container {
+  flex: 1; /* Ensures the right section takes up equal space */
+  display: flex; /* Enables alignment */
+  justify-content: flex-end; /* Aligns the dropdown to the right */
+  align-items: center; /* Vertically aligns the dropdown */
+  gap: 10px;
+}
+
+/* Limit dropdown styles */
+.limit-dropdown {
+  width: 120px;
+  margin-top: 0 !important;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ 
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.limit-dropdown:focus {
+  border-color: #4CAF50; /* Change border color when focused */
+  outline: none;
+}
+
+.limit-dropdown:hover {
+  border-color: #888;
+}
+
+.limit-dropdown option {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.sort-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.limit-dropdown {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}

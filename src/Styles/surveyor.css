@@ -1,0 +1,94 @@
+/* formpage.css or surveyor.css */
+.surveyor-table {
+    margin: 20px;
+  }
+  .surveyor-table h2{
+font-size: 15px;
+
+color:brown;
+  }
+  .surveyor-table h4{
+    font-size: 16px;
+color:#000;
+} 
+.surveyor-table p{
+    margin: 5px 0;
+}
+.surveyor-table span{
+    color:#007bff;
+    margin-right: 5px;
+}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    color:#333;
+  }
+  
+  .action-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .action-icon:hover {
+    color: #007bff;
+  }
+  /* surveyor.css */
+.surveyor-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .surveyor-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .surveyor-table  button {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .surveyor-table   button:hover {
+    background-color: #0056b3;
+  }
+  
+  .action-icon {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .action-icon:hover {
+    color:#0056b3;
+  }
+      

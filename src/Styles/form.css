@@ -1,0 +1,383 @@
+.form-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100% ;
+    background-color: #f0ebf8;
+  }
+  .preview-question {
+    border: 1px solid transparent;
+    transition: border 0.2s;
+  }
+  
+  .preview-question.drag-over {
+    border: 1px dashed #007bff;
+    background-color: #f0f8ff;
+  }
+  
+  .form-builder-container {
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    width: 90%;
+    max-width: 700px;
+    margin:5% 0 14% 0;
+  }
+  .form-preview {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+ 
+
+  .question-container, .preview-question {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+  }
+  .preview-question{
+    border-left: 5px solid #7f85d5;
+  }
+  .question-container{
+    border-top: 8px solid #673ab7;
+  } 
+ 
+  .question-input, .question-type-select, .option-input, input[type="text"],input[type="date"],input[type="time"],textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    box-sizing: border-box; 
+  }
+  .preview-question{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .preview-question label{
+    margin: 5px 0;
+  }
+
+  .preview h5{
+    font-size: 15px;
+    margin: 20px 0 0px 0 ;
+    text-transform: capitalize;
+  }
+  .preview h4{
+    text-align: center;
+    margin: 10px;
+    font-size: 18px !important;
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+
+  
+  .options-container, .preview-question {
+    margin-top: 15px;
+  }
+  .add-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .add-question-btn, .add-section-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .add-option-btn, .add-question-btn, .create-form-btn, .export-btn {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    background-color:#fff;
+    color: #7f85d5;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px solid #ccc;
+  }
+  
+  .add-option-btn:hover, .add-question-btn:hover, .create-form-btn:hover, .export-btn:hover {
+    background-color: #f1f1f1;
+  }
+  .form-builder-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+  }
+
+  .create-form-btn {
+   
+    align-self: flex-end; 
+  }
+  .options-container{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.question-actions {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .edit-btn, .delete-btn, .duplicate-btn ,.validate-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem; 
+  }
+  
+  .edit-btn {
+    color: #007bff;
+  }
+  
+  .edit-btn:hover {
+    color: #0056b3;
+  }
+  
+  .delete-btn {
+    color: #e74c3c;
+  }
+  
+  .delete-btn:hover {
+    color: #c0392b;
+  }
+  
+  .duplicate-btn {
+    color: gray;
+  }
+  
+  .duplicate-btn:hover {
+    color: #6c757d; 
+  }
+  .validate-btn{
+color:green;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+  }
+  
+  .slider.round:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider.round {
+    background-color: #1a73e8;
+  }
+  
+  input:checked + .slider.round:before {
+    transform: translateX(14px);
+  }
+  .required-star {
+    color: red;
+    font-weight: bold;
+  }
+  .preview-question input[type="text"],
+.preview-question input[type="date"],
+.preview-question input[type="time"],
+
+.preview-question textarea,
+.preview-question select {
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  outline: none;
+  padding: 5px 0;
+  width: 60%;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+.preview-question input[type="file"]{
+    border: none;
+    outline: none;
+  padding: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+.preview-question input[type="text"]:focus,
+.preview-question input[type="date"]:focus,
+.preview-question input[type="time"]:focus,
+.preview-question textarea:focus,
+.preview-question select:focus {
+  border-bottom-color: #e0e0e0; /* Change color on focus */
+}
+
+.preview-question textarea {
+  resize: none;
+}
+.line-seperate{
+    width: 100%;
+    height: 1px;
+    background: #e7e8eb;
+    margin: 30px 0 10px 0;
+    border-radius: 2px;
+}
+.section-title-input{
+    margin: 5px 0;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .validate-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: green;
+  }
+  
+  .validation-options {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  .validation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 30%;
+  }
+  .popup-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 3px;
+  }
+  
+  .popup-content h4 {
+    margin-bottom: 10px;
+  }
+  .popup-content input{
+    padding: 5px;
+  }
+  .validation-number-input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-validation-btn,
+  .close-popup-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .add-validation-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .close-popup-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .validation-rule {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: red;
+  }
+  .option-input {
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  .remove-option-btn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  .save-validation-btn{
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+  }
+  .short{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+ 

@@ -1,0 +1,198 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    
+    padding: 10px 20px; 
+    height: 50px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  .navbar-left {
+    display: flex;
+    gap: 20px;
+  }
+ a{
+    text-decoration: none;
+}
+  .nav-link {
+    text-decoration: none;
+    color: #000; 
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease; 
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #007BFF; 
+    text-decoration: none;
+  }
+  
+  .nav-link.active{
+    color: #007BFF; 
+  }
+  .nav-link::after {
+    content: ''; 
+    display: block;
+    width: 100%;
+    height: 2px; 
+    background-color: #007BFF;
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    opacity: 0;
+    transform: scale(0); 
+    transform-origin: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  
+ 
+  .navbar-right {
+    display: flex;
+    gap: 15px; 
+    
+  }
+  .icon {
+    font-size: 22px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #666666;
+  }
+  
+  .icon:hover {
+    color: #000;
+  }
+  .confirmation-popup {
+    position: fixed;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f2f2f2;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+  
+  .confirmation-popup p {
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-popup .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .confirmation-popup button {
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  @media (max-width: 500px){
+    .confirmation-popup p{
+        margin: 10px;
+        text-align: center;
+    }
+    .confirmation-popup{
+        width: 70%;
+        padding: 20px;
+    }
+  }
+  .help-icon {
+    font-size: 1.5rem;
+    color: orange;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .help-popup {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 450px;
+  }
+  
+  .help-popup-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  .help-popup-content p {
+    margin: 5px 0;
+  }
+  
+  .help-popup-content button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .help-popup-content button:hover {
+    background-color: #45a049;
+  }  
+  /* Profile dropdown */
+.profile-container {
+  position: relative;
+  
+
+}
+
+.profile-menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 120px;
+    padding: 10px;
+    text-align: center;
+}
+.line{
+  width: 100%;
+  height: 0.5px;
+  margin: 2px 0;
+  background: #ccc;
+}
+.profile-menu-item {
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.profile-menu-item:hover {
+  background: #f5f5f5;
+}
